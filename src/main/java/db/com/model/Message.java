@@ -1,13 +1,10 @@
 package db.com.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-import java.util.Date;
 
 @Data
 @Builder
@@ -18,12 +15,11 @@ public class Message {
 
     private long id;
     private String date;
-    private BigDecimal high;
-    private BigDecimal low;
-    private BigDecimal volume;
-    //    @JsonProperty("value")
-    private BigDecimal value;
-    private BigDecimal open;
-    private BigDecimal close;
+    private double high;
+    private double low;
+    private double volume;
+    private double value;
+    private double open;
+    private double close;
 
 }
